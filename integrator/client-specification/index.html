@@ -1,0 +1,1962 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="RCPCH Digital Growth Charts Project">
+      
+      
+      
+        <meta name="author" content="The Royal College of Paediatrics and Child Health">
+      
+      
+      <link rel="icon" href="../../_assets/dynamic-child-favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>Client Specification - Digital Growth Charts</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Montserrat";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../_stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#client-specification" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Digital Growth Charts" class="md-header__button md-logo" aria-label="Digital Growth Charts" data-md-component="logo">
+      
+  <img src="../../_assets/logo-desktop.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digital Growth Charts
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Client Specification
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="" type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="" type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/rcpch/digital-growth-charts-documentation/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/about/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../products/products-overview/" class="md-tabs__link">
+        Products
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../clinician/how-the-api-works/" class="md-tabs__link">
+        Clinician
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../getting-started/" class="md-tabs__link md-tabs__link--active">
+        Integrator
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../developer/start-here/" class="md-tabs__link">
+        Developer
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../safety/overview/" class="md-tabs__link">
+        Safety
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../legal/disclaimer/" class="md-tabs__link">
+        Legal
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Digital Growth Charts" class="md-nav__button md-logo" aria-label="Digital Growth Charts" data-md-component="logo">
+      
+  <img src="../../_assets/logo-desktop.svg" alt="logo">
+
+    </a>
+    Digital Growth Charts
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/rcpch/digital-growth-charts-documentation/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/about/" class="md-nav__link">
+        About the dGC
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/team/" class="md-nav__link">
+        dGC Team
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/acknowledgements/" class="md-nav__link">
+        Acknowledgements
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Products
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Products" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Products
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/products-overview/" class="md-nav__link">
+        Products Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/api-server/" class="md-nav__link">
+        API Server
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/react-client/" class="md-nav__link">
+        React Demo Client
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/react-component/" class="md-nav__link">
+        React Chart Component
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/react-native/" class="md-nav__link">
+        React Native Client
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/command-line-client/" class="md-nav__link">
+        Command-line tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/python-library/" class="md-nav__link">
+        Python package
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/google-sheets-plugin/" class="md-nav__link">
+        Google Sheets extension
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../products/flask%28deprecated%29/" class="md-nav__link">
+        Flask/Python Client (deprecated)
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        Clinician
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Clinician" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Clinician
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clinician/how-the-api-works/" class="md-nav__link">
+        How the API Works
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clinician/chart-information-families/" class="md-nav__link">
+        Information for Parents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clinician/chart-information-health-staff/" class="md-nav__link">
+        Chart information for Health staff
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clinician/date-age-calculations/" class="md-nav__link">
+        Date and Age Calculations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clinician/growth-references/" class="md-nav__link">
+        Reference Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clinician/faqs-for-clinicians/" class="md-nav__link">
+        FAQs for Clinicians
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Integrator
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Integrator" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Integrator
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        Getting Started with the Growth Charts API
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/" class="md-nav__link">
+        Tutorial
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/" class="md-nav__link">
+        API Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Client Specification
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Client Specification
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    Background
+  </a>
+  
+    <nav class="md-nav" aria-label="Background">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-uk-who" class="md-nav__link">
+    Understanding UK-WHO
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implications-for-charting-digitally" class="md-nav__link">
+    Implications for charting digitally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifications-for-implementing-your-own-charting" class="md-nav__link">
+    Specifications for implementing your own charting
+  </a>
+  
+    <nav class="md-nav" aria-label="Specifications for implementing your own charting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart-plotting" class="md-nav__link">
+    Chart plotting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-plotting-centile-charts" class="md-nav__link">
+    When plotting centile charts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-plotting-z-score-sd-charts" class="md-nav__link">
+    When Plotting Z-score (SD) charts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjusting-for-gestation-at-birth" class="md-nav__link">
+    Adjusting for Gestation at birth
+  </a>
+  
+    <nav class="md-nav" aria-label="Adjusting for Gestation at birth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-standards-for-rendering" class="md-nav__link">
+    Essential standards for rendering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-uk-nine-centile-chart-format" class="md-nav__link">
+    The UK Nine centile chart format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions-and-terminology-centile-bands" class="md-nav__link">
+    Definitions and terminology Centile Bands
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs-for-integrators/" class="md-nav__link">
+        FAQs for Integrators
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Developer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Developer" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Developer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/start-here/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/adding-a-new-api-endpoint/" class="md-nav__link">
+        Adding a new API endpoint
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/api-docker/" class="md-nav__link">
+        Docker development
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/api-python/" class="md-nav__link">
+        Python development
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/writing-documentation/" class="md-nav__link">
+        Writing Documentation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/faqs-for-developers/" class="md-nav__link">
+        FAQs for Developers
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" data-md-state="indeterminate" type="checkbox" id="__nav_7" checked>
+      
+      <label class="md-nav__link" for="__nav_7">
+        Safety
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Safety" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Safety
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/overview/" class="md-nav__link">
+        Clinical Safety index
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" data-md-state="indeterminate" type="checkbox" id="__nav_7_2" checked>
+      
+      <label class="md-nav__link" for="__nav_7_2">
+        Clinical Safety File
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Clinical Safety File" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          Clinical Safety File
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/csmf/clinical-risk-mgmt-system/" class="md-nav__link">
+        Clinical Risk Management System
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/csmf/clinical-risk-mgmt-plan/" class="md-nav__link">
+        Clinical Risk Management Plan
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/csmf/hazard-log/" class="md-nav__link">
+        Hazard Log
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/csmf/code-security-safety/" class="md-nav__link">
+        Deployment Security
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/csmf/third-party-tools-safety-assmt/" class="md-nav__link">
+        Third Party Tools Safety
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/csmf/license/" class="md-nav__link">
+        CSMS License
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/dtac/" class="md-nav__link">
+        DTAC
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4" data-md-state="indeterminate" type="checkbox" id="__nav_7_4" checked>
+      
+      <label class="md-nav__link" for="__nav_7_4">
+        EU Dedical Devices
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="EU Dedical Devices" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          EU Dedical Devices
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/eu-mdr/doc-api/" class="md-nav__link">
+        Declarations of Conformity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/eu-mdr/mdr-technical-docs/" class="md-nav__link">
+        Technical Documentation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../safety/mhra/" class="md-nav__link">
+        MHRA Registration
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" data-md-state="indeterminate" type="checkbox" id="__nav_8" checked>
+      
+      <label class="md-nav__link" for="__nav_8">
+        Legal
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Legal" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Legal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../legal/disclaimer/" class="md-nav__link">
+        DISCLAIMER
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../legal/licensing-copyright/" class="md-nav__link">
+        Licensing and Copyright
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../legal/data-protection/" class="md-nav__link">
+        Data Protection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../legal/privacy/" class="md-nav__link">
+        Privacy Policy
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    Background
+  </a>
+  
+    <nav class="md-nav" aria-label="Background">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-uk-who" class="md-nav__link">
+    Understanding UK-WHO
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implications-for-charting-digitally" class="md-nav__link">
+    Implications for charting digitally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifications-for-implementing-your-own-charting" class="md-nav__link">
+    Specifications for implementing your own charting
+  </a>
+  
+    <nav class="md-nav" aria-label="Specifications for implementing your own charting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart-plotting" class="md-nav__link">
+    Chart plotting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-plotting-centile-charts" class="md-nav__link">
+    When plotting centile charts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-plotting-z-score-sd-charts" class="md-nav__link">
+    When Plotting Z-score (SD) charts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjusting-for-gestation-at-birth" class="md-nav__link">
+    Adjusting for Gestation at birth
+  </a>
+  
+    <nav class="md-nav" aria-label="Adjusting for Gestation at birth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-standards-for-rendering" class="md-nav__link">
+    Essential standards for rendering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-uk-nine-centile-chart-format" class="md-nav__link">
+    The UK Nine centile chart format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions-and-terminology-centile-bands" class="md-nav__link">
+    Definitions and terminology Centile Bands
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/rcpch/digital-growth-charts-documentation/blob/live/docs/integrator/client-specification.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="client-specification">Client Specification<a class="headerlink" href="#client-specification" title="Permanent link">&para;</a></h1>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>A requirement of the licence for the API is that any charts rendered must meet these standards as agreed by the Digital Growth Charts Project Board. A large amount of documentation has been produced to guide the clinically safe design and rendering of UK growth charts.</strong></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Implementation support service</p>
+<p>The RCPCH can assist in both the technical implementation and clinical assurance of any new charts implementations, to ensure adherence to the Project Board specification, a clinically safe user interface, and likely clinician user acceptance. Please contact us to discuss your needs on <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#109;&#109;&#101;&#114;&#99;&#105;&#97;&#108;&#64;&#114;&#99;&#112;&#99;&#104;&#46;&#97;&#99;&#46;&#117;&#107;">&#99;&#111;&#109;&#109;&#101;&#114;&#99;&#105;&#97;&#108;&#64;&#114;&#99;&#112;&#99;&#104;&#46;&#97;&#99;&#46;&#117;&#107;</a></p>
+</div>
+<h3 id="understanding-uk-who">Understanding UK-WHO<a class="headerlink" href="#understanding-uk-who" title="Permanent link">&para;</a></h3>
+<p>The UK growth charts are made up of 4 datasets taken from 2 growth references (see clinical documentation for more detail).</p>
+<ul>
+<li>
+<p>The UK90 preterm dataset runs from 23 weeks gestation to 42 weeks postmenstrual age as length (from 25 weeks), weight and head circumference.</p>
+</li>
+<li>
+<p>The WHO 2006 dataset runs from 2 weeks of age to 2 years of age as length, weight, <abbr title="Body Mass Index">BMI</abbr> and head circumference.</p>
+</li>
+<li>
+<p>The WHO 2006 dataset continues as <strong>height</strong> (now measured <em>standing</em>) from 2 years to 4 years of age</p>
+</li>
+<li>
+<p>The UK90 dataset picks up until 20y (head circumference to 17 in girls and 18 y in boys)</p>
+</li>
+</ul>
+<h2 id="implications-for-charting-digitally">Implications for charting digitally<a class="headerlink" href="#implications-for-charting-digitally" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>These datasets all overlap, and therefore when plotting them, they must be passed to charting packages as 4 individual series. This means they will appear as discontinuous, with breaks in the lines where they meet/overlap.</p>
+</li>
+<li>
+<p>There is a natural step at each of these time points which <strong>must</strong> be respected. If all 4 datasets are presented 0-20y as a continuous dataset, chart packages will interpolate the gaps and the intentional 'step' will be lost.</p>
+</li>
+<li>
+<p>The API endpoint returns the chart data in an array of arrays. The first level array represents the 9 centiles [0.4, 2, 9 , 25, 50, 75, 91, 98, 99.6], with each centile in turn having a nested array of 4 arrays of data, one for each dataset (see below). The individual data points are reported as float values for x and y coordinates. X corresponds to decimal age, y to the measurement value of the chart requested.</p>
+</li>
+<li>
+<p>The chart data is only returned for the measurement method requested - if only height is supplied, only height centile data will be returned.</p>
+</li>
+<li>
+<p>In addition to the centile data, the growth data presented to the endpoint in the request are returned as an array of x and y values.</p>
+</li>
+</ul>
+<h2 id="specifications-for-implementing-your-own-charting">Specifications for implementing your own charting<a class="headerlink" href="#specifications-for-implementing-your-own-charting" title="Permanent link">&para;</a></h2>
+<div class="admonition success">
+<p class="admonition-title">React component reference charting implementation</p>
+<p>Making growth charts that adhere to the specifcation and are clinical safe and usable is not completely straightforward. That's why we have built a <a href="/products/react-component.md">reference implementation</a> of the charts, as a permissively licensed React component so that you can use it in your own application.</p>
+</div>
+<h3 id="chart-plotting">Chart plotting<a class="headerlink" href="#chart-plotting" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Provide the facility to toggle between height chart and weight chart or display together.</p>
+</li>
+<li>
+<p>Offer option of <abbr title="Body Mass Index">BMI</abbr> and head circumference charts for health staff use.</p>
+</li>
+<li>
+<p>Allow the chart to be scaleable, i.e. zooming in or out, while maintaining variable, visible axes or offer a variety of age ranges displayed to optimise data view.</p>
+</li>
+<li>
+<p>Provide option of Z-score (SD) plots for health staff use (see below).</p>
+</li>
+<li>
+<p>Provide help / information facility to access instructions drawn from the RCPCH educational materials (see separate documents: information for parents, information for health staff).</p>
+</li>
+</ul>
+<h3 id="when-plotting-centile-charts">When plotting centile charts<a class="headerlink" href="#when-plotting-centile-charts" title="Permanent link">&para;</a></h3>
+<p>Certain key presentation principles should be included:</p>
+<ul>
+<li>
+<p>Use nine-centile format (see below).</p>
+</li>
+<li>
+<p>Scale different elements of the chart to best display information in each period.</p>
+</li>
+<li>
+<p>Use fortnightly grid points to 6 months, monthly thereafter.</p>
+</li>
+<li>
+<p>Either show exact age and centile band (see below) when hovering over a point or show in an embedded table.</p>
+</li>
+<li>
+<p>Data points should not be joined by lines.</p>
+</li>
+<li>
+<p>There should be a toggle button to allow the user to see the chronological and corrected ages separately or together.</p>
+</li>
+<li>
+<p>Omit grid lines, which are only useful for manual plotting, and the Y axis can be inconspicuous.</p>
+</li>
+</ul>
+<h3 id="when-plotting-z-score-sd-charts">When Plotting Z-score (SD) charts<a class="headerlink" href="#when-plotting-z-score-sd-charts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Z-score centile charts may be created with age on the X axis and Z-score on the Y axis – this converts the centile curves to horizontal straight lines.</p>
+</li>
+<li>
+<p>All available measurements (weight, height, head, <abbr title="Body Mass Index">BMI</abbr>) should be plotted as series on the same chart with consistent colour coding of the different series (e.g. weight could always be red and height blue etc).</p>
+</li>
+<li>
+<p>The data points may be joined by fine lines.</p>
+</li>
+<li>
+<p>The Y axis should cross the X axis at Z = 0 and have horizontal centile lines at intervals of 0.67 Z between -2.67 and 2.67.</p>
+</li>
+</ul>
+<h3 id="adjusting-for-gestation-at-birth">Adjusting for Gestation at birth<a class="headerlink" href="#adjusting-for-gestation-at-birth" title="Permanent link">&para;</a></h3>
+<p>On the centile chart it should be made clear that allowance has been made for varying age of gestation at birth by offering the option of plotting at chronological age with a <strong>circle</strong> as well as gestational age (age – number of weeks premature) with a <strong>cross</strong>. If plotted together, they should be joined by a line. An option should be offered to toggle between the plotted chronological, corrected ages and both.</p>
+<div class="admonition note">
+<p class="admonition-title">Gestation Age Correction through the life course</p>
+<p><strong>The standard has recently changed</strong> such that now gestational age is taken into account, even when born at gestational ages regarded as term,  and across the whole lifespan. This change was adopted because digital charting makes gestational age correction much easier to do, in fact it is now a completely automated process because of the the dGC API. (Note that this is different from paper charts, where gestational age correction was manual and therefore was only done up to 1 or 2 years depending on the degree of prematurity).</p>
+</div>
+<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Example Gestation</th>
+<th>Old policy</th>
+<th>New policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>39 weeks 4 days</td>
+<td>Plot on 'Term' reference</td>
+<td>'Term' reference has been abandoned in favour of plotting on UK90 preterm chart up till corrected gestational age of 42 weeks 0 days</td>
+</tr>
+<tr>
+<td>26 weeks 0 days</td>
+<td>Gestational age correction applied until 2 (corrected) years old</td>
+<td>Correct for the whole life span</td>
+</tr>
+<tr>
+<td>35 weeks 6 days</td>
+<td>Gestational age correction applied until 1 (corrected) year old</td>
+<td>Correct for the whole life span</td>
+</tr>
+</tbody>
+</table>
+<p>Definitions:
+Gestation at birth
+Weeks premature
+Gestational age
+Chronological age</p>
+<p>Gestational adjustment option provided for all birth gestations and continues indefinitely.</p>
+<p>On a Z-score plot the gestationally adjusted Z-score should be plotted against actual (chronological) age with a label on the plot specifying the number of weeks premature.</p>
+<h2 id="essential-standards-for-rendering">Essential standards for rendering<a class="headerlink" href="#essential-standards-for-rendering" title="Permanent link">&para;</a></h2>
+<p>Whilst it is not essential to show the whole life course when plotting measurements against centile lines, the rendering of the centile lines and the plots must meet the following design standards.</p>
+<ul>
+<li>
+<p>Centiles should be clearly labelled.</p>
+</li>
+<li>
+<p>Overlap between datasets for each centile should be clearly visible and no interpolation function should be used to attempt to link them.</p>
+</li>
+<li>
+<p>The 0.4th, 9th, 50th, 91st and, 99.6th centiles should all be dashed lines (<strong>not</strong> dotted, <strong>not</strong> continuous).</p>
+</li>
+<li>
+<p>The 2nd, 25th, 75th and 98th centiles should be continuous lines (thin).</p>
+</li>
+<li>
+<p>Axes should be clearly labelled (Height/Length in cm, Weight in kg, body mass index in kg/m2, head circumference in cm, age in years).</p>
+</li>
+<li>
+<p>X axis (age in years) increments should be monthly under the age of 2 y, 3 monthly over the age of 2 years.</p>
+</li>
+<li>
+<p>Measurements (height, weight, etc) should be to one decimal place.</p>
+</li>
+<li>
+<p>Centiles should be reported as integers, except if &gt;99 or &lt;1. If outside threshold, they should be reported as &gt;99.6 or &lt;0.4.</p>
+</li>
+</ul>
+<h2 id="the-uk-nine-centile-chart-format">The UK Nine centile chart format<a class="headerlink" href="#the-uk-nine-centile-chart-format" title="Permanent link">&para;</a></h2>
+<p>The nine centile lines used in the British 1990 and UK-WHO charts are labelled in terms of rounded centiles (see table below) but they are precisely defined in terms of the underlying Zscores. The following Z score thresholds are used to define the centiles in the British charts.</p>
+<table>
+<thead>
+<tr>
+<th>Approximate centile</th>
+<th>Exact Z-score</th>
+<th>Line format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.4th</td>
+<td>-2.67</td>
+<td>Dashed</td>
+</tr>
+<tr>
+<td>2nd</td>
+<td>-2.00</td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td>9th</td>
+<td>-1.33</td>
+<td>Dashed</td>
+</tr>
+<tr>
+<td>25th</td>
+<td>-0.67</td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td>50th</td>
+<td>0</td>
+<td>Dashed</td>
+</tr>
+<tr>
+<td>75th</td>
+<td>0.67</td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td>91st</td>
+<td>1.33</td>
+<td>Dashed</td>
+</tr>
+<tr>
+<td>98th</td>
+<td>2.00</td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td>99.6th</td>
+<td>2.67</td>
+<td>Dashed</td>
+</tr>
+</tbody>
+</table>
+<h2 id="definitions-and-terminology-centile-bands">Definitions and terminology Centile Bands<a class="headerlink" href="#definitions-and-terminology-centile-bands" title="Permanent link">&para;</a></h2>
+<p>Within the normal range</p>
+<p>A child is defined as being “on” a centile when within 0.17 SD (0.25 centile space) of the underlying exact Z-score, otherwise they are “between”.</p>
+<table>
+<thead>
+<tr>
+<th>Centile band</th>
+<th>SDS Lower limit</th>
+<th>SDS Upper limit</th>
+<th>Additional Message - Weight/Height/Head</th>
+<th>Additional Message - <abbr title="Body Mass Index">BMI</abbr></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>&lt; -6</td>
+<td></td>
+<td>Probable error</td>
+<td>Probable error</td>
+</tr>
+<tr>
+<td>Below 0.4th</td>
+<td>-6.00</td>
+<td>-2.84</td>
+<td>Below normal range</td>
+<td>Very thin</td>
+</tr>
+<tr>
+<td>0.4th</td>
+<td>-2.84</td>
+<td>-2.50</td>
+<td></td>
+<td>Low <abbr title="Body Mass Index">BMI</abbr></td>
+</tr>
+<tr>
+<td>0.4th-2nd</td>
+<td>-2.50</td>
+<td>-2.17</td>
+<td></td>
+<td>Low <abbr title="Body Mass Index">BMI</abbr></td>
+</tr>
+<tr>
+<td>2nd</td>
+<td>-2.17</td>
+<td>-1.83</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2nd-9th</td>
+<td>-1.83</td>
+<td>-1.50</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9th</td>
+<td>-1.50</td>
+<td>-1.16</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9th-25th</td>
+<td>-1.16</td>
+<td>-0.84</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>25th</td>
+<td>-0.84</td>
+<td>-0.5</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>25th-50th</td>
+<td>-0.50</td>
+<td>-0.17</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>50th</td>
+<td>-0.17</td>
+<td>0.17</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>50th-75th</td>
+<td>0.17</td>
+<td>0.50</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>75th</td>
+<td>0.5</td>
+<td>0.84</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>75th-91st</td>
+<td>0.84</td>
+<td>1.16</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>91st</td>
+<td>1.16</td>
+<td>1.50</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>91st-98th</td>
+<td>1.50</td>
+<td>1.83</td>
+<td></td>
+<td>Overweight</td>
+</tr>
+<tr>
+<td>98th</td>
+<td>1.83</td>
+<td>2.17</td>
+<td></td>
+<td>Overweight</td>
+</tr>
+<tr>
+<td>98th-99.6th</td>
+<td>2.17</td>
+<td>2.50</td>
+<td></td>
+<td>Overweight (obese)</td>
+</tr>
+<tr>
+<td>99.6th</td>
+<td>2.50</td>
+<td>2.84</td>
+<td></td>
+<td>Overweight (obese)</td>
+</tr>
+<tr>
+<td>&gt;99.6th</td>
+<td>2.84</td>
+<td>6</td>
+<td>Above normal range</td>
+<td>severely obese</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>&gt; 6</td>
+<td>Probable error</td>
+<td>Probable error</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../api-reference/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              API Reference
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../faqs-for-integrators/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              FAQs for Integrators
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Royal College of Paediatrics and Child Health (RCPCH)
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tracking", "navigation.top", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+    
+  </body>
+</html>
